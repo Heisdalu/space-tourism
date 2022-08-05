@@ -1,0 +1,124 @@
+body {
+  background: url("../../assets/home.webp");
+  background: url("../../assets/home-jpg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.headerContainer {
+  color: white;
+  min-height: 85vh;
+  display: grid;
+}
+
+.innerContainer {
+  display: grid;
+}
+
+.header {
+  max-width: 450px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.headerTitle {
+  display: flex;
+  flex-direction: column;
+}
+
+.firstText {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--small-letter);
+  font-family: var(--barlow-font);
+  letter-spacing: 2px;
+}
+
+.secondText {
+  font-family: var(--bellefair-font);
+  font-size: 5rem;
+  padding: 0.5rem 0 1rem 0;
+  font-weight: 400;
+}
+
+.headerContent {
+  font-family: var(--barlow-font);
+  font-size: 1rem;
+  line-height: 1.8rem;
+}
+
+.exploreBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.explore {
+  height: 150px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 50%;
+  font-family: var(--bellefair-font);
+  color: var(--cirlce-text);
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+@media screen and (min-width: 768px) {
+  .headerContent {
+    font-size: 1.1rem;
+  }
+  .secondText {
+    font-size: 9rem;
+  }
+
+  .explore {
+    height: 240px;
+    width: 240px;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+    body{
+        background: url('../../assets/desktop-home.jpg');
+    }
+
+    .header{
+        text-align: left;
+        padding: 0rem;
+    }
+
+    .secondText{
+        font-size: 9.3rem;
+    }
+
+  .headerContainer {
+    display: grid;
+    align-items: center;
+  }
+
+  .innerContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .exploreBox{
+    align-items: flex-end;
+  }
+
+  .explore {
+    height: 230px;
+    width: 230px;
+    font-size: 2rem;
+  }
+}
