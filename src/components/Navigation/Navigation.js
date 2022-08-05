@@ -11,7 +11,7 @@ const Navigation = () => {
       <a href="/home" className={style.hamburger}>
         <Hamburger />
       </a>
-      <div className={style.line} arial-hidden></div>
+      <div className={style.line} arial-hidden='true'></div>
       <div className={style.desktopNavigation}>
         <a href="/home">HOME</a>
         <a href="/home">DESTINATION</a>
