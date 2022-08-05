@@ -1,0 +1,12 @@
+
+:root{
+  --small-letter: #D0D6F9;
+  --barlow-font: 'Barlow Condensed', sans-serif;
+  --bellefair-font: 'Bellefair', serif;
+  --white: #FFFFFF;
+  --cirlce-text: #0B0D17;
+}
+
+.main-wrapper{
+  min-height: 100vh;
+}
