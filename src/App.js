@@ -6,7 +6,10 @@ import Home from "./components/Home/Home";
 const App = () => {
   return <div className="main-wrapper">
    <Navigation />
+   <div className='subWrapper'>
    <Home />
+
+   </div>
   </div>
 }
 

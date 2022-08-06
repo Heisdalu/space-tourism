@@ -5,11 +5,11 @@ body {
   background-size: 100% 100%;
 }
 
-.headerContainer {
+/* .headerContainer {
   color: white;
   min-height: 85vh;
   display: grid;
-}
+} */
 
 .innerContainer {
   display: grid;
@@ -101,11 +101,6 @@ body {
     .secondText{
         font-size: 9.3rem;
     }
-
-  .headerContainer {
-    display: grid;
-    align-items: center;
-  }
 
   .innerContainer {
     display: grid;

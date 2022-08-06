@@ -1,12 +1,26 @@
-
-:root{
-  --small-letter: #D0D6F9;
-  --barlow-font: 'Barlow Condensed', sans-serif;
-  --bellefair-font: 'Bellefair', serif;
-  --white: #FFFFFF;
-  --cirlce-text: #0B0D17;
+:root {
+  --small-letter: #d0d6f9;
+  --barlow-font: "Barlow Condensed", sans-serif;
+  --bellefair-font: "Bellefair", serif;
+  --white: #ffffff;
+  --cirlce-text: #0b0d17;
 }
 
-.main-wrapper{
+.main-wrapper {
   min-height: 100vh;
+}
+
+.subWrapper {
+  color: white;
+  min-height: 85vh;
+  display: grid;
+}
+
+
+@media screen and (min-width: 1200px) {
+  .subWrapper {
+    display: grid;
+    align-items: center;
+  }
+  
 }

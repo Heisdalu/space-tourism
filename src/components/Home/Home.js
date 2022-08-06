@@ -3,7 +3,6 @@ import style from "./Home.module.css";
 
 const Home = () => {
   return (
-    <div className={style.headerContainer}>
       <div className={style.innerContainer}>
         <header className={style.header}>
           <h1 className={style.headerTitle}>
@@ -22,7 +21,6 @@ const Home = () => {
           <p className={style.explore}>EXPLORE</p>
         </div>
       </div>
-    </div>
   );
 };
 
