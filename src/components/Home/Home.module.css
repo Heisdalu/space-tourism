@@ -50,6 +50,7 @@ body {
   font-family: var(--barlow-font);
   font-size: 1rem;
   line-height: 1.8rem;
+  color: #D0D6F9;
 }
 
 .exploreBox {

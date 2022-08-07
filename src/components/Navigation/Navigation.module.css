@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   padding: 1.5rem;
-  height: 15vh;
+  height: 10vh;
 }
 
 .hamburger {
@@ -52,7 +52,8 @@
 
 @media screen and (min-width: 1200px) {
   .navigation {
-    transform: translateY(1.5rem);
+    /* transform: translateY(1.5rem); */
+    margin-top: 1.5rem;
   }
   .home {
     margin-right: 3vw;
