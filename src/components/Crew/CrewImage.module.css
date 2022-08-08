@@ -1,0 +1,26 @@
+.crewImage {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #383B4B;
+}
+
+@media screen and (min-width: 768px) {
+  .crewImage {
+    order: 3;
+    border: none;
+  }
+
+  .crewImage img {
+    height: 50vmin;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .crewImage {
+    grid-area: 1/2/3;
+  }
+
+  .crewImage img {
+    height: 100%;
+  }
+}

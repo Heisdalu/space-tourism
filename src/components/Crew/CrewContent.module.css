@@ -1,0 +1,81 @@
+.crewMainContent {
+  /* border: 1px solid; */
+  padding: 1rem 0;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.crewTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.crewSubtitle {
+  font-weight: 400;
+  font-family: var(--bellefair-font);
+  color: rgba(255, 255, 255, 0.481);
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.crewName {
+  color: var(--white);
+  font-size: 1.5rem;
+  font-family: var(--bellefair-font);
+  font-weight: 400;
+}
+
+.crewDetail {
+  font-size: 0.9rem;
+  color: #d0d6f9;
+  padding: 0.8rem 0.5rem;
+  line-height: 1.5rem;
+  font-family: var(--barlow-font);
+  font-weight: 400;
+  font-family: var(--main-barlow);
+}
+
+
+@media screen and (min-width: 768px) {
+    .crewSubtitle {
+    font-size: 1.5rem;
+  }
+
+  .crewName {
+    font-size: 2.5rem;
+  }
+
+  
+  .crewDetail {
+    font-size: 1rem;
+    line-height: 28px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .crewMainContent {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+
+  .crewSubtitle {
+    font-size: 2rem;
+  }
+
+  .crewName {
+    padding: 0rem;
+    padding: 1.5rem 0;
+    font-size: 3.5rem;
+  }
+
+    .crewDetail {
+    padding: 0;
+    font-size: 18px;
+    line-height: 2rem;
+    padding-right: 2rem;
+  }
+
+}
