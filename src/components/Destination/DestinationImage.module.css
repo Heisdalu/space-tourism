@@ -1,0 +1,28 @@
+.planetImage {
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: center;
+}
+
+.planetImage img {
+  height: 50vmin;
+}
+
+@media screen and (min-width: 768px) {
+  .planetImage img {
+    height: 40vmin;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .planetImage {
+    justify-content: normal;
+    align-self: center;
+    padding-left: 2rem;
+  }
+
+  .planetImage img {
+    height: 50vmin;
+  }
+}
