@@ -1,0 +1,62 @@
+.technologyContainer {
+  /* border: 1px solid; */
+  padding-bottom: 3rem;
+}
+
+.technologyHeader {
+  /* border: 1px solid; */
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: 2.7px;
+  font-family: var(--barlow-font);
+  font-weight: 400;
+  color: var(--white);
+}
+
+.technologyHeader::before {
+  content: "03";
+  margin-right: 1rem;
+  color: rgba(255, 255, 255, 0.25);
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .technologyContainer {
+    padding-top: 3rem;
+  }
+  .technologyHeader {
+    /* border: 1px solid; */
+    text-align: left;
+    padding-left: 2rem;
+    font-size: 1.25rem;
+    letter-spacing: 3.38px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .technologyContainer {
+    margin-left: 7.5rem;
+    margin-top: 2rem;
+  }
+  .technologyMainBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .technologyHeader {
+    padding: 0;
+    font-size: 1.5rem;
+  }
+
+  .technologyMainContent {
+    display: flex;
+    padding: 2rem 0;
+    align-self: center;
+  }
+
+  .contentBox {
+    margin: 0;
+    padding-left: 3rem;
+    max-width: none;
+  }
+}

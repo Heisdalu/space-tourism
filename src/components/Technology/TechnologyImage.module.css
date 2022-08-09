@@ -1,0 +1,17 @@
+.technologyImage {
+  margin: 1.5rem 0;
+}
+
+.technologyImage img {
+  width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  .technologyImage {
+    grid-area: 1/2;
+  }
+
+  .technologyImage img {
+    height: 60vmin;
+  }
+}
