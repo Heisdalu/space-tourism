@@ -11,12 +11,20 @@ const Navigation = () => {
       <a href="/home" className={style.hamburger}>
         <Hamburger />
       </a>
-      <div className={style.line} arial-hidden='true'></div>
+      <div className={style.line} arial-hidden="true"></div>
       <div className={style.desktopNavigation}>
-        <a href="/home">HOME</a>
-        <a href="/home">DESTINATION</a>
-        <a href="/home">CREW</a>
-        <a href="/home">TECHNOLOGY</a>
+        <a href="/home" className={style.link}>
+          HOME
+        </a>
+        <a href="/home" className={style.link}>
+          DESTINATION
+        </a>
+        <a href="/home" className={style.link}>
+          CREW
+        </a>
+        <a href="/home" className={style.link}>
+          TECHNOLOGY
+        </a>
       </div>
     </nav>
   );
