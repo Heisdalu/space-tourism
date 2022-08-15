@@ -7,7 +7,7 @@ import Crew from "./components/Crew/Crew";
 import Technology from "./components/Technology/Technology";
 
 const App = () => {
-  return (
+  return ( 
     <div className="main-wrapper">
       <Navigation />
       <div className="subWrapper">
