@@ -5,12 +5,6 @@ body {
   background-size: 100% 100%;
 }
 
-/* .headerContainer {
-  color: white;
-  min-height: 85vh;
-  display: grid;
-} */
-
 .innerContainer {
   display: grid;
 }
@@ -20,7 +14,6 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding: 2rem;
   text-align: center;
@@ -56,7 +49,6 @@ body {
 .exploreBox {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .explore {
@@ -74,6 +66,16 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+
+  .header {
+    justify-content: center;
+  }
+
+  .exploreBox {
+    align-items: center;
+  }
+
+
   .headerContent {
     font-size: 1.1rem;
   }
