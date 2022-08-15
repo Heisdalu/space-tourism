@@ -5,6 +5,7 @@ import HomePage from "./pages/HomePage";
 import "./App.css";
 import DestinationPage from "./pages/DestinationPage";
 import CrewPage from "./pages/CrewPage";
+import TechPage from "./pages/TechPage";
 // import Navigation from "./components/Navigation/Navigation";
 // import Home from "./components/Home/Home";
 // import Destination from "./components/Destination/Destination";
@@ -18,14 +19,21 @@ const App = () => {
         <Route path="/" exact>
           <Redirect to="/home" />
         </Route>
+        
         <Route path="/home">
           <HomePage />
         </Route>
+
         <Route path="/destination">
           <DestinationPage />
         </Route>
+
         <Route path="/crew">
-         <CrewPage/>
+          <CrewPage />
+        </Route>
+
+        <Route path="/technology">
+          <TechPage />
         </Route>
 
         <Route path="*">
