@@ -18,12 +18,42 @@
   font-weight: 400;
 }
 
+.NavLinkContainer {
+   margin: 0 2rem;
+   position: relative;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  height: 5px;
+  width: 0;
+  background-color: var(--white);
+  opacity: 0.5;
+  bottom: 0;
+}
+
+.activeLink::after {
+  content: '';
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  background-color: var(--white);
+  bottom: 0;
+  opacity: 1;
+  transition: width .5s;
+}
+
+.NavLinkContainer:hover .link::after{
+  width: 100%;
+  transition: width .5s;
+}
+
 @media screen and (min-width: 768px) {
   .navigation {
     padding: 0;
     padding-left: 2rem;
     height: 13vh;
-    /* margin-top:1rem ; */
   }
 
   .hamburger {
@@ -39,7 +69,6 @@
   }
 
   .desktopNavigation a {
-    margin: 0 2rem;
     display: flex;
     align-items: center;
     height: 100%;
@@ -49,6 +78,7 @@
     color: var(--white);
     text-decoration: none;
   }
+  
 }
 
 @media screen and (min-width: 1200px) {
@@ -61,32 +91,27 @@
   }
 
   .desktopNavigation {
-     /* background-color: rgba(255, 255, 255, 0.319); */
-     backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
   }
 
-.link{
-       /* border: 1px solid; */
-
-}
 
   .link:nth-child(1)::before {
-    content: '01';
+    content: "01";
     margin-right: 0.5rem;
     font-weight: 700;
   }
   .link:nth-child(2)::before {
-    content: '02';
+    content: "02";
     margin-right: 0.5rem;
     font-weight: 700;
   }
   .link:nth-child(3)::before {
-    content: '03';
+    content: "03";
     margin-right: 0.5rem;
     font-weight: 700;
   }
   .link:nth-child(4)::before {
-    content: '04';
+    content: "04";
     margin-right: 0.5rem;
     font-weight: 700;
   }

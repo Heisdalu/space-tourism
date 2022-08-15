@@ -1,0 +1,19 @@
+.main-wrapper {
+  min-height: 100vh;
+}
+
+.subWrapper {
+  color: white;
+  min-height: 85vh;
+  display: grid;
+  /* background-color: rgb(101, 84, 84); */
+}
+
+
+@media screen and (min-width: 1200px) {
+  .subWrapper {
+    display: grid;
+    align-items: center;
+  }
+  
+}
