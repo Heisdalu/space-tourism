@@ -43,7 +43,7 @@ body {
   font-family: var(--barlow-font);
   font-size: 1rem;
   line-height: 1.8rem;
-  color: #D0D6F9;
+  color: #d0d6f9;
 }
 
 .exploreBox {
@@ -66,7 +66,6 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-
   .header {
     justify-content: center;
   }
@@ -74,7 +73,6 @@ body {
   .exploreBox {
     align-items: center;
   }
-
 
   .headerContent {
     font-size: 1.1rem;
@@ -91,26 +89,25 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
+  body {
+    background: url("../../assets/desktop-home.jpg");
+  }
 
-    body{
-        background: url('../../assets/desktop-home.jpg');
-    }
+  .header {
+    text-align: left;
+    padding: 0rem;
+  }
 
-    .header{
-        text-align: left;
-        padding: 0rem;
-    }
-
-    .secondText{
-        font-size: 9.3rem;
-    }
+  .secondText {
+    font-size: 9.3rem;
+  }
 
   .innerContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
-  .exploreBox{
+  .exploreBox {
     align-items: flex-end;
   }
 
@@ -118,5 +115,19 @@ body {
     height: 230px;
     width: 230px;
     font-size: 2rem;
+  }
+}
+
+@media screen and (hover: hover) and (min-width: 1200px) {
+
+  .explore {
+    outline: 0 solid rgba(255, 255, 255, 0.229);
+    transition: outline .5s;
+    cursor: pointer;
+  }
+
+  .explore:hover {
+    outline: 85px solid rgba(255, 255, 255, 0.229);
+    transition: outline .5s;
   }
 }
