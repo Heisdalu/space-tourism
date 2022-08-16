@@ -19,7 +19,7 @@ const App = () => {
         <Route path="/" exact>
           <Redirect to="/home" />
         </Route>
-        
+
         <Route path="/home">
           <HomePage />
         </Route>
@@ -27,6 +27,7 @@ const App = () => {
         <Route path="/destination">
           <DestinationPage />
         </Route>
+
 
         <Route path="/crew">
           <CrewPage />

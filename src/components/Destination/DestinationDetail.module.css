@@ -1,5 +1,4 @@
 .destnationDetailBox {
-  /* border: 1px solid; */
   padding: 0 1rem;
   display: flex;
   flex-direction: column;
@@ -7,7 +6,6 @@
 }
 
 .mainDetail {
-  /* border: 1px solid yellow; */
   padding-bottom: 1.5rem;
 }
 
@@ -17,7 +15,6 @@
   padding: 1rem 0;
   font-family: var(--bellefair-font);
   color: var(--white);
-  /* border: 1px solid; */
 }
 
 .mainDetailContent {
@@ -31,40 +28,6 @@
   word-spacing: 2px;
 }
 
-.subDetailBox {
-  padding: 1.5rem 0;
-  /* border: 1px solid; */
-  display: flex;
-  flex-direction: column;
-  /* gap: 2rem; */
-  border-top: 1px solid #383b4b;
-}
-
-.subDetail {
-  padding: 0.5rem 0;
-}
-
-.subDetail:nth-child(1) {
-  margin-bottom: 1rem;
-}
-
-.subDetailTitle {
-  font-family: var(--barlow-font);
-  margin-bottom: 1rem;
-  color: #d0d6f9;
-  font-size: 0.875rem;
-  font-weight: 400;
-  letter-spacing: 2.3px;
-}
-
-.subDetailValue {
-  font-size: 1rem;
-  color: var(--white);
-  font-weight: 400;
-  font-family: var(--bellefair-font);
-  font-size: 1.75rem;
-}
-
 @media screen and (min-width: 768px) {
   .mainDetailTitle {
     font-size: 4rem;
@@ -73,16 +36,6 @@
     line-height: 28px;
   }
 
-  .subDetailBox {
-    flex-direction: row;
-    justify-content: center;
-  }
-
-
-   .subDetail:nth-child(1) {
-    margin: 0;
-    margin-right: 5rem;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -90,12 +43,6 @@
     font-size: 6rem;
   }
   .mainDetailContent {
-    max-width: 400px;
-  }
-
-  .subDetailBox {
-    justify-content: normal;
-    padding: 0;
-    padding-top: 1.5rem;
+    max-width: 450px;
   }
 }

@@ -30,116 +30,15 @@ body {
   font-weight: 700;
 }
 
-.planetImage {
-  /* border: 1px solid; */
-  display: flex;
-  justify-content: center;
-}
-
-.planetImage img {
-  height: 50vmin;
-}
-
 .destinationMain {
-  /* border: 1px solid blue; */
   text-align: center;
 }
 
-.navigation {
-  /* border: 1px solid; */
-  margin: 0.5rem 0;
-  /* padding: 1rem 0; */
-  display: flex;
-  justify-content: center;
-}
-
-.navLinkBox {
-  display: flex;
-  margin: 0 0.8rem;
-}
-
-.navLink {
-  height: 100%;
-  padding: 1rem 0;
-  font-weight: 400;
-  letter-spacing: 2.3px;
-  font-size: 1rem;
-  font-family: var(--barlow-font);
-  color: #d0d6f9;
-  text-decoration: none;
-  position: relative;
-}
-
-
-.activeNavLink{
-  border-bottom: 3px solid var(--white);
-}
-
 .destnationDetailBox {
-  /* border: 1px solid; */
   padding: 0 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.mainDetail {
-  /* border: 1px solid yellow; */
-  padding-bottom: 1.5rem;
-}
-
-.mainDetailTitle {
-  font-size: 3.5rem;
-  font-weight: 400;
-  padding: 1rem 0;
-  font-family: var(--bellefair-font);
-  color: var(--white);
-  /* border: 1px solid; */
-}
-
-.mainDetailContent {
-  font-weight: 400;
-  font-family: var(--barlow-font);
-  color: #d0d6f9;
-  line-height: 25px;
-  max-width: 500px;
-  font-size: 1rem;
-  padding-bottom: 0.5rem;
-  word-spacing: 2px;
-}
-
-.subDetailBox {
-  padding: 1.5rem 0;
-  /* border: 1px solid; */
-  display: flex;
-  flex-direction: column;
-  /* gap: 2rem; */
-  border-top: 1px solid #383b4b;
-}
-
-.subDetail {
-  padding: 0.5rem 0;
-}
-
-.subDetail:nth-child(1) {
-  margin-bottom: 1rem;
-}
-
-.subDetailTitle {
-  font-family: var(--barlow-font);
-  margin-bottom: 1rem;
-  color: #d0d6f9;
-  font-size: 0.875rem;
-  font-weight: 400;
-  letter-spacing: 2.3px;
-}
-
-.subDetailValue {
-  font-size: 1rem;
-  color: var(--white);
-  font-weight: 400;
-  font-family: var(--bellefair-font);
-  font-size: 1.75rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -151,31 +50,6 @@ body {
     text-align: left;
     margin-bottom: 2.5rem;
     font-size: 1.5rem;
-  }
-
-  .planetImage img {
-    height: 40vmin;
-  }
-  .navigation {
-    margin: 1rem 0;
-  }
-
-  .mainDetailTitle {
-    font-size: 4rem;
-  }
-
-  .mainDetailContent {
-    line-height: 28px;
-  }
-
-  .subDetailBox {
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .subDetail:nth-child(1) {
-    margin: 0;
-    margin-right: 5rem;
   }
 }
 
@@ -191,58 +65,7 @@ body {
     grid-template-columns: 1fr 1fr;
   }
 
-  .planetImage {
-    justify-content: normal;
-    align-self: center;
-    padding-left: 2rem;
-  }
-
-  .planetImage img {
-    height: 50vmin;
-  }
-
   .destinationMain {
     text-align: left;
   }
-
-  .navigation {
-    justify-content: normal;
-    padding: 0;
-  }
-
-  .mainDetailTitle {
-    font-size: 6rem;
-  }
-
-  .mainDetailContent {
-    max-width: 400px;
-  }
-
-  .subDetailBox {
-    justify-content: normal;
-    padding: 0;
-    padding-top: 1.5rem;
-  }
-}
-
-@media (hover:hover) {
-  .navLink::after {
-  content: "";
-  position: absolute;
-  height: 3px;
-  width: 0%;
-  transform: all 0.5s;
-  /* transform: width 500ms; */
-  left: 0;
-  bottom: -3px;
-  /* background-color: var(--white); */
-}
-
-.navLinkBox:hover .navLink::after {
-  background-color: var(--white);
-  width: 100%;
-  opacity: 0.5;
-  transition: all 500ms;
-}
-
 }
