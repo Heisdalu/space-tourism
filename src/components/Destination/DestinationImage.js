@@ -1,24 +1,21 @@
-import { useParams } from "react-router-dom";
+import {useParams } from "react-router-dom";
 import style from "./DestinationImage.module.css";
-import Moon_Webp from "../../assets/moon1.webp";
-import Moon_Png from "../../assets/moon2.png";
-
-const imagesList = [
-  {id: 'moon',}
-]
+import { destinationContent } from "../../lib/data";
 
 const DestinationImage = (props) => {
-  const params = useParams();
-  console.log(params);
+  const { id } = useParams();
+  const data = destinationContent.find((el) => el.id === id);
+
+  if(!data) return;
+
   return (
     <figure className={style.planetImage}>
       <picture>
-        <source srcSet={Moon_Webp} />
-        <img src={Moon_Png} alt="the moon" />
+        <source srcSet={data.images.webp} />
+        <img src={data.images.png} alt="the moon" />
       </picture>
     </figure>
   );
 };
-
 
 export default DestinationImage;
