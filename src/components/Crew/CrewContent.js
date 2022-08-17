@@ -1,20 +1,25 @@
-import style from './CrewContent.module.css';
+import { useHistory, useParams } from "react-router-dom";
+import style from "./CrewContent.module.css";
+import { crewData } from "../../lib/crew-data";
 
 const CrewContent = (props) => {
-    return (
-      <section className={style.crewMainContent}>
-        <h1 className={style.crewTitle}>
-          <span className={style.crewSubtitle}>COMMANDER</span>
-          <span className={style.crewName}>DOUGLAS HURLEY</span>
-        </h1>
+  const { name } = useParams();
+  const history = useHistory()
 
-        <p className={style.crewDetail}>
-          Douglas Gerald Hurley is an American engineer, former Marine Corps
-          pilot and former NASA astronaut. He launched into space for the third
-          time as commander of Crew Dragon Demo-2.
-        </p>
-      </section>
-    );
-}
+  const user = crewData.find((el) => el.id === name);
 
-export default CrewContent
+  if(!user) return history.push('/home')
+
+  return (
+    <section className={style.crewMainContent}>
+      <h1 className={style.crewTitle}>
+        <span className={style.crewSubtitle}>{user.job}</span>
+        <span className={style.crewName}>{user.name}</span>
+      </h1>
+
+      <p className={style.crewDetail}>{user.detail}</p>
+    </section>
+  );
+};
+
+export default CrewContent;

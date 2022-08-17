@@ -12,8 +12,12 @@
   border-radius: 50%;
   border: none;
   outline: none;
-  background-color: rgba(255, 255, 255, 0.736);
+  background-color: rgba(255, 255, 255, 0.259);
   cursor: pointer;
+}
+
+.activeBtn{
+  background-color: var(--white);
 }
 
 .navBtn + * {
