@@ -37,3 +37,10 @@
     justify-content: normal;
   }
 }
+
+@media screen and (hover:hover) {
+  .navBtn:hover {
+    background-color: var(--white);
+    opacity: 0.6;
+  }
+}

@@ -1,7 +1,7 @@
 import style from "./Navigation.module.css";
 import Logo from "../../assets/Logo";
 import exitLogo from "../../assets/exit.svg";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import HamburgerLogo from "../../assets/hamburger.svg";
 import { useState } from "react";
 

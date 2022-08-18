@@ -14,7 +14,7 @@
   font-family: var(--bellefair-font);
   font-weight: 400;
   background-color: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.278);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,5 +45,12 @@
   .link {
     margin: 0;
     margin-bottom: 1.5rem;
+  }
+}
+
+
+@media screen and (hover:hover) {
+  .link:hover {
+    border: 1px solid #ffffff;
   }
 }
