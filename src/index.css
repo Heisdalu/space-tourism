@@ -20,6 +20,9 @@ body {
 /*
   6. Improve media defaults
 */
+a {
+  outline: none;
+}
 img, picture, video, canvas, svg {
   display: block;
 }
