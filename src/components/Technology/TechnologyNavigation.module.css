@@ -1,5 +1,4 @@
 .navBox {
-  /* border: 1px solid; */
   display: flex;
   text-align: center;
   padding: 1rem 0;
@@ -16,6 +15,10 @@
   font-weight: 400;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
 }
 
 .activeLink {
@@ -23,13 +26,12 @@
   color: #0b0d17;
 }
 
-
 @media screen and (min-width: 768px) {
-    .link{
-        height: 58px;
-        width: 58px;
-        font-size: 1.5rem;
-    }
+  .link {
+    height: 58px;
+    width: 58px;
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -39,10 +41,8 @@
     justify-content: normal;
     align-items: normal;
     padding: 0.5rem 0;
-
   }
   .link {
-    /* padding: 0; */
     margin: 0;
     margin-bottom: 1.5rem;
   }

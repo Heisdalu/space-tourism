@@ -1,10 +1,8 @@
 .technologyContainer {
-  /* border: 1px solid; */
   padding-bottom: 3rem;
 }
 
 .technologyHeader {
-  /* border: 1px solid; */
   text-align: center;
   font-size: 1rem;
   letter-spacing: 2.7px;
@@ -25,7 +23,6 @@
     padding-top: 3rem;
   }
   .technologyHeader {
-    /* border: 1px solid; */
     text-align: left;
     padding: 2rem 0;
     padding-left: 2rem;
