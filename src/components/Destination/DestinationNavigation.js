@@ -1,5 +1,4 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
-import { NavLink, useParams, useRouteMatch } from "react-router-dom";
+import { NavLink, useRouteMatch } from "react-router-dom";
 import style from "./DestinationNavigation.module.css";
 
 const DestinationNavigation = () => {
