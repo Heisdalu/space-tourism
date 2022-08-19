@@ -1,0 +1,31 @@
+.loadingContainer {
+  position: fixed;
+  top: 0;
+  background-color: black;
+  min-height: 100vh;
+  width: 100%;
+  z-index: 15;
+  display: grid;
+  place-items: center;
+}
+
+.loading_gif {
+  height: 20vmin;
+  width: 20vmin;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-direction: alternate;
+  animation-name: animate;
+}
+
+@keyframes animate {
+    from {transform: rotate(-360deg) scale(1); }
+    to {transform: rotate(360deg) scale(1.5);}
+}
+
+.loading_gif svg {
+  height: 100%;
+  width: 100%;
+}
