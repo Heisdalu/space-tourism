@@ -1,9 +1,4 @@
-body {
-  background: url("../../assets/home.webp");
-  background: url("../../assets/home-jpg.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
+
 
 .innerContainer {
   display: grid;
@@ -89,10 +84,6 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  body {
-    background: url("../../assets/desktop-home.jpg");
-  }
-
   .header {
     text-align: left;
     padding: 0rem;

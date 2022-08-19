@@ -1,12 +1,13 @@
 import style from "./Layout.module.css";
-import Navigation from '../Navigation/Navigation'
-// import Destination from "./components/Destination/Destination";
-// import Crew from "./components/Crew/Crew";
-// import Technology from "./components/Technology/Technology";
+import Navigation from "../Navigation/Navigation";
 
 const Layout = (props) => {
+  // window.addEventListener("load", (e) => {
+  //   console.log(e);
+  // });
+
   return (
-    <div className={style["main-wrapper"]}>
+    <div className={`${style["main-wrapper"]} ${style.home}`}>
       <Navigation />
       <div className={style.subWrapper}>{props.children}</div>
     </div>

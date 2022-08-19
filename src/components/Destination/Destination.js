@@ -8,8 +8,13 @@ import { Redirect, Route, useRouteMatch } from "react-router-dom";
 const Destination = () => {
   const { url, path } = useRouteMatch();
 
+  const el = (e) => {
+    console.log(e);
+  } 
+
+
   return (
-    <div className={style.destinationContainer}>
+    <div className={style.destinationContainer} onLoad={el}>
       <h1 className={style.title}>PICK YOUR DESTINATION</h1>
       <div className={style.destinationContent}>
         <Route path={`${path}`} exact>

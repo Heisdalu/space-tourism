@@ -196,7 +196,7 @@
     background-color: white;
     opacity: 0.3;
     width: 100%;
-    z-index: 222;
+    z-index: 15;
     position: relative;
     transform: translateX(1rem);
   }
