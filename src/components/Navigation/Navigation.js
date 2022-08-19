@@ -12,16 +12,11 @@ const Navigation = () => {
 
   const toggleNav = () => {
     setActive(true);
-    console.log('dddd');
   };
 
   const removeNav = () => {
     setActive(false)
   }
-
-  console.log(isActive);
-
-
   
   return (
     <nav className={style.navigation}>

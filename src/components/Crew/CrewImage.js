@@ -23,7 +23,7 @@ const CrewImage = () => {
         />
         <source
           srcSet={user.images.mobile_webp}
-          media="max-width:768px"
+          media="(max-width:768px)"
           type="image/webp"
         />
         <img
