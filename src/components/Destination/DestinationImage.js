@@ -8,11 +8,12 @@ const DestinationImage = (props) => {
 
   if(!data) return;
 
+  console.log(data);
   return (
     <figure className={style.planetImage}>
       <picture>
         <source srcSet={data.images.webp} />
-        <img src={data.images.png} alt="the moon" />
+        <img src={data.images.png} alt={data.title + 'pic'} />
       </picture>
     </figure>
   );

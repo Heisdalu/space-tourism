@@ -152,6 +152,7 @@
     background-color: var(--white);
     opacity: 0.5;
     bottom: 0;
+    left: 0;
   }
 
   .NavLinkContainer:hover .link::after {

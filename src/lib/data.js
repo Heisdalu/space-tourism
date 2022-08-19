@@ -28,8 +28,8 @@ export const destinationContent = [
     distance: "225 MIL. KM",
     time: "9 MONTHS",
     images: {
-      webp: Mars_Png,
-      png: Mars_Webp,
+      webp: Mars_Webp,
+      png: Mars_Png,
     },
   },
   {
