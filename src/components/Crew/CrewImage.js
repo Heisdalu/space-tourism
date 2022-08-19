@@ -11,9 +11,21 @@ const CrewImage = () => {
   return (
     <figure className={style.crewImage}>
       <picture>
-        <source srcSet={user.images.desktop_webp} media="(min-width:1200px)" />
-        <source srcSet={user.images.desktop_png} media="(min-width:1200px)" />
-        <source srcSet={user.images.mobile_webp} media="max-width:768px" />
+        <source
+          srcSet={user.images.desktop_webp}
+          media="(min-width:1200px)"
+          type="image/webp"
+        />
+        <source
+          srcSet={user.images.desktop_png}
+          media="(min-width:1200px)"
+          type="image/png"
+        />
+        <source
+          srcSet={user.images.mobile_webp}
+          media="max-width:768px"
+          type="image/webp"
+        />
         <img
           src={user.images.mobile_png}
           alt="douglas henry"

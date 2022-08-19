@@ -12,8 +12,8 @@ const DestinationImage = (props) => {
   return (
     <figure className={style.planetImage}>
       <picture>
-        <source srcSet={data.images.webp} />
-        <img src={data.images.png} alt={data.title + 'pic'} />
+        <source srcset={data.images.webp} type="image/webp" />
+        <img src={data.images.png} alt={data.title + " pic"} />
       </picture>
     </figure>
   );
