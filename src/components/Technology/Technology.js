@@ -3,9 +3,13 @@ import style from "./Technology.module.css";
 import TechnologyNavigation from "./TechnologyNavigation";
 import TechnologyImage from "./TechnologyImage";
 import TechnologyContent from "./TechnologyContent";
+import useBg from "../../hooks/use-Bg";
+import { TECH_BG } from "../../lib/bg";
 
 const Technology = () => {
   const { path, url } = useRouteMatch();
+
+  useBg(TECH_BG)
 
   return (
     <div className={style.technologyContainer}>

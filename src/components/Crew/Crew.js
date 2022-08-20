@@ -1,11 +1,15 @@
 import { Redirect, Route, useRouteMatch } from "react-router-dom";
+import useBg from "../../hooks/use-Bg";
 import style from "./Crew.module.css";
 import CrewImage from "./CrewImage";
 import CrewNavigation from "./CrewNavigation";
 import CrewContent from "./CrewContent";
+import { CREW_BG } from "../../lib/bg";
 
 const Crew = () => {
   const { path } = useRouteMatch();
+
+  useBg(CREW_BG);
 
   return (
     <div className={style.crewContainer}>

@@ -1,20 +1,18 @@
 import style from "./Destination.module.css";
-
+import { Redirect, Route, useRouteMatch } from "react-router-dom";
 import DestinationImage from "./DestinationImage";
 import DestinationNavigation from "./DestinationNavigation";
 import DestinationDetail from "./DestinationDetail";
-import { Redirect, Route, useRouteMatch } from "react-router-dom";
+import { DESTINATION_BG } from "../../lib/bg";
+import useBg from "../../hooks/use-Bg";
 
 const Destination = () => {
   const { url, path } = useRouteMatch();
 
-  const el = (e) => {
-    console.log(e);
-  } 
-
+  useBg(DESTINATION_BG);
 
   return (
-    <div className={style.destinationContainer} onLoad={el}>
+    <div className={style.destinationContainer}>
       <h1 className={style.title}>PICK YOUR DESTINATION</h1>
       <div className={style.destinationContent}>
         <Route path={`${path}`} exact>

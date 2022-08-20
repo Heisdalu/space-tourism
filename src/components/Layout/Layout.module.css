@@ -5,15 +5,34 @@
   /* background-color: url();   */
 }
 
-.home {
+.homeBg {
   background: url("../../assets/home.webp");
   background: url("../../assets/home-jpg.jpg");
-  background-repeat: no-repeat;
   background-size: 100% 100%;
-  
+  background-repeat: no-repeat;
 }
 
-.subWrapper {
+.destBg {
+  background: url("../../assets//destination-background.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.crewBg {
+  background: url('../../assets/crew-bg.webp');
+  background: url('../../assets/crew-bg.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.techBg {
+  background: url('../../assets/tech-bg.webp');
+  background: url('../../assets/tech-bg.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+  .subWrapper {
   color: white;
   min-height: 85vh;
   display: grid;
@@ -21,7 +40,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .home {
+  .homeBg {
     background: url("../../assets/desktop-home.jpg");
   }
 
