@@ -9,6 +9,7 @@ const DestinationDetail = () => {
   const data = destinationContent.find((el) => el.id === id);
 
   if (!data) return history.push("/home");
+
   
   return (
     <section className={style.destnationDetailBox}>

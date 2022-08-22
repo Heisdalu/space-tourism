@@ -11,6 +11,8 @@ const Destination = () => {
 
   useBg(DESTINATION_BG);
 
+  
+
   return (
     <div className={style.destinationContainer}>
       <h1 className={style.title}>PICK YOUR DESTINATION</h1>

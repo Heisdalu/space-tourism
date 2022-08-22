@@ -24,7 +24,7 @@
   flex-direction: column;
   align-items: flex-start;
   backdrop-filter: blur(10px);
-  transition: transform 0.5s;
+  transition: transform 1s;
 }
 
 .activeNav{

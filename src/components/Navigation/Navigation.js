@@ -1,9 +1,9 @@
+import React, { useState } from "react";
 import style from "./Navigation.module.css";
 import Logo from "../../assets/Logo";
 import exitLogo from "../../assets/exit.svg";
 import { NavLink } from "react-router-dom";
 import HamburgerLogo from "../../assets/hamburger.svg";
-import { useState } from "react";
 
 const Navigation = () => {
   const [isActive, setActive] = useState(false);
@@ -78,4 +78,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export default React.memo(Navigation);
