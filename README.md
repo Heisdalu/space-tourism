@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Click here]()
+- Live Site URL: [Click here](daalu-space-tourism.netlify.app)
 
 
 ### Built with
